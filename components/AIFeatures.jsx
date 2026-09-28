@@ -107,9 +107,9 @@ export default function AIFeatures() {
         >
           <ArrowRight className="w-5 h-5" />
         </button>
-        <div 
+        <div
           ref={scrollContainerRef}
-          className="flex overflow-x-auto pb-8 md:gap-8 px-0 md:px-4 snap-x snap-mandatory scroll-smooth w-full" 
+          className="flex overflow-x-auto pb-8 md:gap-8 px-0 md:px-4 snap-x snap-mandatory scroll-smooth w-full"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {features.map((feature, index) => (
