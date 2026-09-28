@@ -25,51 +25,33 @@ export default function Footer() {
               className="font-bold mb-4 text-lg"
               style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
             >
-              Products
+              Capabilities
             </h4>
             <ul className="space-y-2">
-              
-                <li>
+              <li>
                 <Link
-                  href="https://scaluplayout.vercel.app/"
+                  href="/contact-us"
                   className="text-white hover:text-primary transition"
                 >
-                  Scalup
+                  Private LLM
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/profit-engine"
+                  href="/contact-us"
                   className="text-white hover:text-primary transition"
                 >
-                  Profit Engine
+                  AI Training Data
                 </Link>
               </li>
               <li>
                 <Link
-                  href="https://www.astrokids.ai/"
+                  href="/intelligent-infrastructure"
                   className="text-white hover:text-primary transition"
                 >
-                  Astro Kids
+                  AI Infrastructure
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/compliance-bot"
-                  className="text-white hover:text-primary transition"
-                >
-                  Compliance Guard
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/price-sense"
-                  className="text-white hover:text-primary transition"
-                >
-                  PriceSense
-                </Link>
-              </li>
-
             </ul>
           </div>
 
@@ -83,34 +65,34 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  Physical AI
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/agentic-ai"
                   className="text-white hover:text-primary transition"
                 >
-                  Agentic AI
+                  Enterprise AI
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bussiness-intelligent"
+                  href="/contact-us"
                   className="text-white hover:text-primary transition"
                 >
-                  Business Intelligence
+                  Industry AI
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/ai-knowledge-base"
+                  href="/contact-us"
                   className="text-white hover:text-primary transition"
                 >
-                  AI Knowledge Base
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/intelligent-infrastructure"
-                  className="text-white hover:text-primary transition"
-                >
-                  Intelligent Infrastructure
+                  Customer AI
                 </Link>
               </li>
             </ul>
@@ -126,10 +108,26 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/enterprise-website-development"
+                  href="/agentic-ai"
                   className="text-white hover:text-primary transition"
                 >
-                  Enterprise Website Development
+                  AI/ML
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bussiness-intelligent"
+                  className="text-white hover:text-primary transition"
+                >
+                  Data
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cloud-ops"
+                  className="text-white hover:text-primary transition"
+                >
+                  Cloud & Infrastructure
                 </Link>
               </li>
               <li>
@@ -137,15 +135,7 @@ export default function Footer() {
                   href="/product-development"
                   className="text-white hover:text-primary transition"
                 >
-                  Product Development & Engineering
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/agentic-process-automation"
-                  className="text-white hover:text-primary transition"
-                >
-                  AI & Agentic Process Automation
+                  Product Engineering
                 </Link>
               </li>
               <li>
@@ -153,15 +143,15 @@ export default function Footer() {
                   href="/application-development"
                   className="text-white hover:text-primary transition"
                 >
-                  Application Development
+                  Digital Engineering
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/growth-marketing"
+                  href="/compliance-bot"
                   className="text-white hover:text-primary transition"
                 >
-                  MarTech & Growth Hacking
+                  Security & GRC
                 </Link>
               </li>
             </ul>
