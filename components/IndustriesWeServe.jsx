@@ -25,7 +25,7 @@ const industries = [
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop",
   },
   {
-    title: "Governance & NSGO'S",
+    title: "Governance & NGO'S",
     description: "Empowering public sectors and NGOs with scalable digital solutions.",
     image: "https://images.unsplash.com/photo-1541872703874-fa7137452d37?q=80&w=2070&auto=format&fit=crop",
   },
@@ -68,7 +68,7 @@ export default function IndustriesWeServe() {
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                     {item.title}
                   </h3>
-                  
+
                   <p className="text-slate-300 text-sm md:text-base leading-relaxed line-clamp-3">
                     {item.description}
                   </p>
