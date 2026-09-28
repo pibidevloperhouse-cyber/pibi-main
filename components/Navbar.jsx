@@ -36,7 +36,7 @@ export default function Navbar() {
               href="/#Products"
               className="text-slate-200 hover:text-white transition"
             >
-              Products
+              Capabilities
             </Link>
             <Link
               href="/#Services"
@@ -96,7 +96,7 @@ export default function Navbar() {
               onClick={handleNavClick}
               className="block py-3 text-slate-200 hover:text-white transition"
             >
-              Products
+              Capabilities
             </Link>
 
             <Link

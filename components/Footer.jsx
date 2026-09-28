@@ -60,49 +60,6 @@ export default function Footer() {
               className="font-bold mb-4 text-lg"
               style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
             >
-              Solutions
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-white hover:text-primary transition"
-                >
-                  Physical AI
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/agentic-ai"
-                  className="text-white hover:text-primary transition"
-                >
-                  Enterprise AI
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-white hover:text-primary transition"
-                >
-                  Industry AI
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-white hover:text-primary transition"
-                >
-                  Customer AI
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 
-              className="font-bold mb-4 text-lg"
-              style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
-            >
               Services
             </h4>
             <ul className="space-y-2">
@@ -152,6 +109,49 @@ export default function Footer() {
                   className="text-white hover:text-primary transition"
                 >
                   Security & GRC
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 
+              className="font-bold mb-4 text-lg"
+              style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+            >
+              Solutions
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  Physical AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/agentic-ai"
+                  className="text-white hover:text-primary transition"
+                >
+                  Enterprise AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  Industry AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  Customer AI
                 </Link>
               </li>
             </ul>

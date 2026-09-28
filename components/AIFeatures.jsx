@@ -88,7 +88,7 @@ export default function AIFeatures() {
   ];
 
   return (
-    <section className="py-20 bg-[#303030] overflow-hidden">
+    <section id="Solutions" className="py-20 bg-[#303030] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight pb-2">
           Sovereign AI Built for How Business Works
