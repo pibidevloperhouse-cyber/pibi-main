@@ -43,9 +43,14 @@ export default function OurProducts() {
   return (
     <section className="py-20 bg-slate-50" id="Products">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl md:text-5xl font-light text-center mb-16 text-[#000052]">
-          Applied AI with <span className="font-bold text-transparent bg-clip-text bg-[linear-gradient(135deg,#1f6fb2,#2ec4b6)]">real-world impact</span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#000052] mb-4 tracking-tight">
+            Sovereign AI Infrastructure
+          </h2>
+          <p className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-[linear-gradient(135deg,#1f6fb2,#2ec4b6)]">
+            Your Data. Your Model. Your Infrastructure
+          </p>
+        </div>
 
         <div className="bg-[#2A84AB] border border-white/20 rounded-xl overflow-hidden shadow-2xl">
           {/* Tabs Header */}

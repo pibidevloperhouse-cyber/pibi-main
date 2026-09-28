@@ -10,6 +10,7 @@ import AgentsDetails from "@/components/AgentsDetails";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import CTASection from "@/components/CTASection";
+import AIFeatures from "@/components/AIFeatures";
 
 import CaseStudies from "@/components/CaseStudies";
 
@@ -57,6 +58,7 @@ export default function HomePage() {
       <OurProducts />
       {/* <AgentsDetails /> */}
       {/* <TechInovation /> */}
+      <AIFeatures />
       <Specialist />
       {/* <PerformanceGuarantee /> */}
       <CaseStudies />
