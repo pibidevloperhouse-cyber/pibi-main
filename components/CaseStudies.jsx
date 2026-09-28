@@ -52,13 +52,13 @@ export default function CaseStudies() {
       <div className="max-w-[1400px] mx-auto relative">
         {/* Custom Navigation Buttons */}
         <button
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors"
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 bg-[#1f1f1f]/50 backdrop-blur-sm text-white hover:bg-white/10 transition-colors"
           onClick={() => swiperRef.current?.swiper?.slidePrev()}
         >
           <ArrowLeft className="w-5 h-5" />
         </button>
         <button
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors"
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-12 h-12 flex items-center justify-center rounded-full border border-white/20 bg-[#1f1f1f]/50 backdrop-blur-sm text-white hover:bg-white/10 transition-colors"
           onClick={() => swiperRef.current?.swiper?.slideNext()}
         >
           <ArrowRight className="w-5 h-5" />
@@ -66,11 +66,10 @@ export default function CaseStudies() {
 
         <Swiper
           ref={swiperRef}
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true, el: ".custom-pagination" }}
           className="rounded-2xl overflow-hidden shadow-2xl"
         >
