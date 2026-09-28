@@ -52,13 +52,15 @@ export default function AIFeatures() {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -350, behavior: "smooth" });
+      const scrollAmount = scrollContainerRef.current.firstElementChild?.offsetWidth || scrollContainerRef.current.offsetWidth;
+      scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: 350, behavior: "smooth" });
+      const scrollAmount = scrollContainerRef.current.firstElementChild?.offsetWidth || scrollContainerRef.current.offsetWidth;
+      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
 
@@ -107,25 +109,26 @@ export default function AIFeatures() {
         </button>
         <div 
           ref={scrollContainerRef}
-          className="flex overflow-x-auto gap-4 md:gap-8 pb-8 px-4 sm:px-6 snap-x snap-mandatory scroll-smooth" 
+          className="flex overflow-x-auto pb-8 md:gap-8 px-0 md:px-4 snap-x snap-mandatory scroll-smooth w-full" 
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="shrink-0 snap-center group flex flex-col justify-between bg-[#f0f2f5] border-none rounded-[2rem] p-6 md:p-10 overflow-hidden w-[280px] sm:w-[320px] md:w-[380px] h-[400px] sm:h-[450px] md:h-[500px] transition-all duration-500 hover:-translate-y-2"
-            >
-              <div className="relative z-10">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4 bg-[linear-gradient(135deg,#1f6fb2,#2ec4b6)] bg-clip-text text-transparent leading-tight pb-1">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm md:text-lg leading-snug">
-                  {feature.description}
-                </p>
-              </div>
+            <div key={index} className="w-full md:w-auto shrink-0 flex justify-center snap-center px-4 md:px-0">
+              <div
+                className="group flex flex-col justify-between bg-[#f0f2f5] border-none rounded-[2rem] p-6 md:p-10 overflow-hidden w-full sm:w-[320px] md:w-[380px] h-[400px] sm:h-[450px] md:h-[500px] transition-all duration-500 hover:-translate-y-2"
+              >
+                <div className="relative z-10">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4 bg-[linear-gradient(135deg,#1f6fb2,#2ec4b6)] bg-clip-text text-transparent leading-tight pb-1">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm md:text-lg leading-snug">
+                    {feature.description}
+                  </p>
+                </div>
 
-              <div className="mt-8 flex justify-center items-center relative z-0 flex-1">
-                <feature.Visual />
+                <div className="mt-8 flex justify-center items-center relative z-0 flex-1">
+                  <feature.Visual />
+                </div>
               </div>
             </div>
           ))}
