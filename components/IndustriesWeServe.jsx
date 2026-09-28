@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -48,9 +49,10 @@ export default function IndustriesWeServe() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {industries.map((item, index) => (
-            <div
+            <Link
+              href="/contact"
               key={index}
-              className="relative overflow-hidden h-[300px] md:h-[340px] group cursor-pointer bg-slate-900 rounded-md"
+              className="relative overflow-hidden h-[300px] md:h-[340px] group cursor-pointer bg-slate-900 rounded-md block"
             >
               <div className="absolute inset-0 z-0">
                 {/* Using a standard img tag for unsplash URLs */}
@@ -78,7 +80,7 @@ export default function IndustriesWeServe() {
                   <ArrowRight size={18} />
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function Specialist() {
@@ -47,9 +48,10 @@ export default function Specialist() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {specialties.map((item, index) => (
-            <div
+            <Link
+              href="/contact-us"
               key={index}
-              className="relative overflow-hidden h-[280px] md:h-[320px] group cursor-pointer bg-[#050505] border border-white/10"
+              className="relative overflow-hidden h-[280px] md:h-[320px] group cursor-pointer bg-[#050505] border border-white/10 block"
             >
               {/* Background Image */}
               <div className="absolute inset-0 z-0">
@@ -82,7 +84,7 @@ export default function Specialist() {
                   <ArrowRight size={16} className="relative z-10 group-hover:translate-x-0.5 transition-transform" />
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
