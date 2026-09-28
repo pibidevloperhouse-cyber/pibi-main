@@ -190,15 +190,14 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="https://www.youtube.com/@PiBiTechnologies"
+                href="https://www.instagram.com/pibi_technologies/"
                 target="_blank"
                 className="text-white hover:text-primary transition"
               >
                 <Instagram className="w-5 h-5" />
-
               </Link>
               <Link
-                href="https://www.instagram.com/pibi_technologies/"
+                href="https://www.youtube.com/@PiBiTechnologies"
                 target="_blank"
                 className="text-white hover:text-primary transition"
               >

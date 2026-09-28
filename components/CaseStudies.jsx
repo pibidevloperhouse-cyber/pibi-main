@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,31 +18,31 @@ export default function CaseStudies() {
     {
       id: 1,
       titleStart: "Transforming a global fintech's",
-      titleHighlight: "sales operations with enterprise lead qualification",
-      tags: ["FINTECH", "SALES", "LEAD QUALIFICATION"],
+      titleHighlight: "customer acquisition with AI-powered lead intelligence",
+      tags: ["PRODUCT ENGINEERING", "DIGITAL ENGINEERING", "AI"],
       metric: "47.6%",
       metricDesc: "conversion rate growth",
-      buttonText: "Read the case study",
+      buttonText: "Explore the case study",
       image: "/fintech_case_1790310555897.jpg",
     },
     {
       id: 2,
-      titleStart: "Collecting in-field driving data",
-      titleHighlight: "to train a leading insurance provider's rewards application",
-      tags: ["INSURANCE", "TELEMATICS", "DATA AI"],
+      titleStart: "Collecting real-world driving data",
+      titleHighlight: "to build smarter AI-powered insurance experiences",
+      tags: ["PRODUCT ENGINEERING", "DIGITAL ENGINEERING", "INFRASTRUCTURE"],
       metric: "2,360",
       metricDesc: "test drives completed",
-      buttonText: "Read the case study",
+      buttonText: "Explore the case study",
       image: "/car.jpeg",
     },
     {
       id: 3,
-      titleStart: "Enhancing customer satisfaction",
-      titleHighlight: "and brand perception for a global payment provider",
-      tags: ["PAYMENTS", "CX", "BRAND PERCEPTION"],
+      titleStart: "Improving customer experiences",
+      titleHighlight: "with AI-powered payment intelligence for a global payments provider",
+      tags: ["PRODUCT ENGINEERING", "DIGITAL ENGINEERING", "AI"],
       metric: "+86pp",
-      metricDesc: "increase in brand Net Promoter Score",
-      buttonText: "Read the case study",
+      metricDesc: "increase in customer satisfaction score",
+      buttonText: "Explore the case study",
       image: "/payment_cs_case_1790310651009.jpg",
     },
   ];
@@ -121,7 +122,8 @@ export default function CaseStudies() {
                   </div>
 
                   <div>
-                    <button 
+                    <Link 
+                      href="/contact-us"
                       className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/40 text-white text-sm transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-[#1f6fb2]/30"
                       style={{
                         background: 'linear-gradient(135deg, rgba(31,111,178,0) 0%, rgba(46,196,182,0) 100%)', // Default transparent
@@ -135,7 +137,7 @@ export default function CaseStudies() {
                     >
                       {item.buttonText}
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 
