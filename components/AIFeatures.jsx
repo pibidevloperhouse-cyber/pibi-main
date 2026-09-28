@@ -29,9 +29,6 @@ const TiltImageVisual = ({ src, alt }) => {
       className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mt-6 flex items-center justify-center cursor-pointer [perspective:1000px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      animate={{ y: [-8, 8, -8] }}
-      whileHover={{ scale: 1.1 }}
-      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
     >
       <motion.img
         src={src}
@@ -76,7 +73,7 @@ export default function AIFeatures() {
   const displayFeatures = [...features, ...features];
 
   return (
-    <section className="py-20 bg-[#18181b] overflow-hidden">
+    <section className="py-20 bg-[#303030] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight pb-2">
           Sovereign AI Built for How Business Works

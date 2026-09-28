@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OurProducts() {
   const [activeTab, setActiveTab] = useState(0);
@@ -92,7 +93,7 @@ export default function OurProducts() {
                 </p>
 
                 {/* Button with gradient hover */}
-                <button className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-[#2A84AB] hover:text-white transition-all duration-300 rounded-full bg-white hover:shadow-lg overflow-hidden">
+                <Link href="/contact-us" className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-[#2A84AB] hover:text-white transition-all duration-300 rounded-full bg-white hover:shadow-lg overflow-hidden">
                   
                   {/* Hover Gradient Background */}
                   <div 
@@ -104,7 +105,7 @@ export default function OurProducts() {
                     {tabs[activeTab].buttonText}
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </span>
-                </button>
+                </Link>
               </div>
 
               {/* Right Media */}

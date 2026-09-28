@@ -1,12 +1,11 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
 const AgentsDetails = ({ title, id }) => {
-  const router = useRouter();
 
   const cards = [
     {
@@ -54,9 +53,9 @@ const AgentsDetails = ({ title, id }) => {
   ];
 
   const Card = ({ card }) => (
-    <div
-      onClick={() => router.push(card.link)}
-      className="group flex flex-col overflow-hidden rounded-xl cursor-pointer bg-[#2a2a2a] border border-[#3f3f3f] hover:border-blue-500/50 transition-all duration-300 h-full"
+    <Link
+      href={card.link}
+      className="group flex flex-col overflow-hidden rounded-xl cursor-pointer bg-[#2a2a2a] border border-[#3f3f3f] hover:border-blue-500/50 transition-all duration-300 h-full block"
     >
       {/* Top Half: Image */}
       <div className="relative w-full h-[220px] overflow-hidden">
@@ -95,7 +94,7 @@ const AgentsDetails = ({ title, id }) => {
           <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
-    </div>
+    </Link>
   );
 
   return (

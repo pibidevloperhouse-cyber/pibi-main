@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -158,13 +159,13 @@ export function MainPage() {
                   </p>
 
                   <div className="animate-on-active delay-300">
-                    <button
-                      onClick={() => router.push(slide.link)}
+                    <Link
+                      href={slide.link}
                       className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6] px-8 py-4 text-lg font-semibold text-white transition-all hover:opacity-90 shadow-[0_0_20px_rgba(31,111,178,0.3)] hover:shadow-[0_0_30px_rgba(46,196,182,0.4)]"
                     >
                       {slide.cta}
                       <ArrowRight size={20} className="transition group-hover:translate-x-1" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
