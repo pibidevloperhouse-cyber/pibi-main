@@ -25,7 +25,7 @@ export default function Specialist() {
       image: "/re.png",
     },
     {
-      title: "Governance & NSGO'S",
+      title: "Governance & NGO'S",
       description: "Empowering public sectors and NGOs with scalable digital solutions.",
       image: "/ngo.jpeg",
     },
@@ -68,15 +68,15 @@ export default function Specialist() {
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-wide">
                     {item.title}
                   </h3>
-                  
+
                   <p className="text-white font-medium drop-shadow-md text-sm md:text-base leading-relaxed line-clamp-3">
                     {item.description}
                   </p>
                 </div>
 
                 <div className="relative w-8 h-8 rounded-full border border-white group-hover:border-transparent flex items-center justify-center text-white transition-all overflow-hidden">
-                  <div 
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
+                  <div
+                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)' }}
                   ></div>
                   <ArrowRight size={16} className="relative z-10 group-hover:translate-x-0.5 transition-transform" />
