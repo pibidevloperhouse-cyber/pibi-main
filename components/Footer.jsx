@@ -22,43 +22,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 
-              className="font-bold mb-4 text-lg"
-              style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
-            >
-              Capabilities
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-white hover:text-primary transition"
-                >
-                  Private LLM
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="text-white hover:text-primary transition"
-                >
-                  AI Training Data
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/intelligent-infrastructure"
-                  className="text-white hover:text-primary transition"
-                >
-                  AI Infrastructure
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 
-              className="font-bold mb-4 text-lg"
-              style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+              className="font-bold mb-4 text-lg text-[#2ec4b6]"
             >
               Services
             </h4>
@@ -116,8 +80,41 @@ export default function Footer() {
 
           <div>
             <h4 
-              className="font-bold mb-4 text-lg"
-              style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+              className="font-bold mb-4 text-lg text-[#2ec4b6]"
+            >
+              Capabilities
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  Private LLM
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-primary transition"
+                >
+                  AI Training Data
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/intelligent-infrastructure"
+                  className="text-white hover:text-primary transition"
+                >
+                  AI Infrastructure
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 
+              className="font-bold mb-4 text-lg text-[#2ec4b6]"
             >
               Solutions
             </h4>

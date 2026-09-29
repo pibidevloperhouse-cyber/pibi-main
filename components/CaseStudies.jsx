@@ -80,13 +80,7 @@ export default function CaseStudies() {
                 <div className="flex-1 p-8 md:p-14 flex flex-col justify-center relative z-10">
                   <h3 className="text-2xl md:text-4xl font-semibold mb-8 leading-tight text-white">
                     {item.titleStart}{" "}
-                    <span 
-                      style={{ 
-                        backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}
-                    >
+                    <span className="text-[#2ec4b6]">
                       {item.titleHighlight}
                     </span>
                   </h3>
@@ -106,12 +100,7 @@ export default function CaseStudies() {
 
                   <div className="flex items-center gap-4 mb-10">
                     <span 
-                      className="text-5xl md:text-6xl font-bold tracking-tight"
-                      style={{ 
-                        backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}
+                      className="text-5xl md:text-6xl font-bold tracking-tight text-[#2ec4b6]"
                     >
                       {item.metric}
                     </span>
@@ -123,15 +112,15 @@ export default function CaseStudies() {
                   <div>
                     <Link 
                       href="/contact-us"
-                      className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/40 text-white text-sm transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-[#1f6fb2]/30"
+                      className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/40 text-white text-sm transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-[#2ec4b6]/30"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(31,111,178,0) 0%, rgba(46,196,182,0) 100%)', // Default transparent
+                        backgroundColor: 'transparent',
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.background = 'linear-gradient(135deg, #1f6fb2, #2ec4b6)';
+                        e.currentTarget.style.backgroundColor = '#2ec4b6';
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.background = 'transparent';
+                        e.currentTarget.style.backgroundColor = 'transparent';
                       }}
                     >
                       {item.buttonText}

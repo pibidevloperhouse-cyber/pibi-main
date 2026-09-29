@@ -55,7 +55,7 @@ const AgentsDetails = ({ title, id }) => {
   const Card = ({ card }) => (
     <Link
       href={card.link}
-      className="group flex flex-col overflow-hidden rounded-xl cursor-pointer bg-[#2a2a2a] border border-[#3f3f3f] hover:border-blue-500/50 transition-all duration-300 h-full block"
+      className="group flex flex-col overflow-hidden rounded-xl cursor-pointer bg-[#3c3c3c] border border-[#3f3f3f] hover:border-blue-500/50 transition-all duration-300 h-full block"
     >
       {/* Top Half: Image */}
       <div className="relative w-full h-[220px] overflow-hidden">
@@ -66,18 +66,13 @@ const AgentsDetails = ({ title, id }) => {
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
         {/* Subtle gradient to blend into the card background */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#2a2a2a] to-transparent"></div>
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#3c3c3c] to-transparent"></div>
       </div>
 
       {/* Bottom Half: Content */}
       <div className="p-6 md:p-8 flex flex-col flex-grow">
         <h3 
-          className="text-2xl font-bold mb-4"
-          style={{ 
-            backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}
+          className="text-2xl font-bold mb-4 text-[#2ec4b6]"
         >
           {card.title}
         </h3>
@@ -88,8 +83,7 @@ const AgentsDetails = ({ title, id }) => {
         
         {/* Arrow Icon */}
         <div 
-          className="mt-auto w-10 h-10 rounded-full flex items-center justify-center text-white group-hover:opacity-90 transition-all shadow-md shadow-[#2ec4b6]/20"
-          style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)' }}
+          className="mt-auto w-10 h-10 rounded-full flex items-center justify-center text-white bg-[#2ec4b6] group-hover:opacity-90 transition-all shadow-md shadow-[#2ec4b6]/20"
         >
           <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
         </div>

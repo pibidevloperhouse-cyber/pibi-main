@@ -188,7 +188,7 @@
   }
 
   a {
-    @apply text-primary hover:underline;
+    @apply text-primary;
   }
   .maplibregl-popup-content {
     @apply bg-transparent! shadow-none! p-0! rounded-none!;

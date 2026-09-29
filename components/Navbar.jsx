@@ -33,16 +33,16 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-8">
             <Link
-              href="/#Products"
-              className="text-slate-200 hover:text-white transition"
-            >
-              Capabilities
-            </Link>
-            <Link
               href="/#Services"
               className="text-slate-200 hover:text-white transition"
             >
               Services
+            </Link>
+            <Link
+              href="/#Products"
+              className="text-slate-200 hover:text-white transition"
+            >
+              Capabilities
             </Link>
             <Link
               href="/#Solutions"
@@ -92,19 +92,19 @@ export default function Navbar() {
         {isOpen && (
           <div className="lg:hidden pb-6 border-t border-slate-800 bg-slate-950">
             <Link
-              href="/#Products"
-              onClick={handleNavClick}
-              className="block py-3 text-slate-200 hover:text-white transition"
-            >
-              Capabilities
-            </Link>
-
-            <Link
               href="/#Services"
               onClick={handleNavClick}
               className="block py-3 text-slate-200 hover:text-white transition"
             >
               Services
+            </Link>
+
+            <Link
+              href="/#Products"
+              onClick={handleNavClick}
+              className="block py-3 text-slate-200 hover:text-white transition"
+            >
+              Capabilities
             </Link>
 
             <Link

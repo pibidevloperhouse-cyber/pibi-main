@@ -28,7 +28,7 @@ export function MainPage() {
       title: (
         <>
           Engineering the Next <br className="hidden md:block"/>
-          Generation of <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6]">Digital Health Systems</span>
+          Generation of <span className="text-[#2ec4b6]">Digital Health Systems</span>
         </>
       ),
       subtitle:
@@ -44,7 +44,7 @@ export function MainPage() {
       title: (
         <>
           Web Experiences Powered by <br className="hidden md:block"/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6]">Intelligent Agents</span>
+          <span className="text-[#2ec4b6]">Intelligent Agents</span>
         </>
       ),
       subtitle:
@@ -60,7 +60,7 @@ export function MainPage() {
       title: (
         <>
           Turning Business Data into <br className="hidden md:block"/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6]">Decisive Intelligence</span>
+          <span className="text-[#2ec4b6]">Decisive Intelligence</span>
         </>
       ),
       subtitle:
@@ -76,7 +76,7 @@ export function MainPage() {
       title: (
         <>
           Enterprise Knowledge, Made <br className="hidden md:block"/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6]">Instantly Accessible</span>
+          <span className="text-[#2ec4b6]">Instantly Accessible</span>
         </>
       ),
       subtitle:
@@ -140,12 +140,12 @@ export function MainPage() {
                 </video>
               )}
               
-              <div className="absolute inset-0 bg-gradient-to-r from-[#030712]/70 via-[#030712]/20 to-transparent z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#030712]/50 via-[#030712]/10 to-transparent z-0"></div>
               
               <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 xl:px-32 text-left">
                 <div className="max-w-3xl">
                   {slide.eyebrow && (
-                    <p className="mb-4 text-teal-400 text-sm md:text-base font-bold uppercase tracking-[0.2em] animate-on-active">
+                    <p className="mb-4 text-[#2ec4b6] text-sm md:text-base font-bold uppercase tracking-[0.2em] animate-on-active">
                       {slide.eyebrow}
                     </p>
                   )}
@@ -154,14 +154,14 @@ export function MainPage() {
                     {slide.title}
                   </h1>
                   
-                  <p className="mt-6 max-w-2xl text-lg md:text-xl text-sky-100 drop-shadow-[0_2px_4px_rgba(31,111,178,0.5)] mb-10 leading-relaxed animate-on-active delay-200 font-medium">
+                  <p className="mt-6 max-w-2xl text-lg md:text-xl text-white drop-shadow-[0_2px_4px_rgba(46,196,182,0.6)] mb-10 leading-relaxed animate-on-active delay-200 font-medium">
                     {slide.subtitle}
                   </p>
 
                   <div className="animate-on-active delay-300">
                     <Link
                       href={slide.link}
-                      className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6] px-8 py-4 text-lg font-semibold text-white transition-all hover:opacity-90 shadow-[0_0_20px_rgba(31,111,178,0.3)] hover:shadow-[0_0_30px_rgba(46,196,182,0.4)]"
+                      className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6] px-8 py-4 text-lg font-semibold text-white transition-all hover:opacity-90 shadow-[0_0_20px_rgba(46,196,182,0.4)] hover:shadow-[0_0_30px_rgba(46,196,182,0.6)]"
                     >
                       {slide.cta}
                       <ArrowRight size={20} className="transition group-hover:translate-x-1" />
@@ -182,7 +182,7 @@ export function MainPage() {
           opacity: 1;
         }
         .swiper-pagination-bullet-active {
-          background: #3b82f6;
+          background: #2ec4b6;
           width: 24px;
           border-radius: 5px;
           transition: width 0.3s ease;
