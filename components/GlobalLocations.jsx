@@ -20,14 +20,14 @@ const globalOffices = [
 
 const indiaOffices = [
   {
-    country: "Chennai (India)",
-    address: ["Tharamani, Chennai - 600 113"],
-    image: "/chennai1.jpeg",
-  },
-  {
-    country: "Madurai (India)",
+    country: "Madurai",
     address: ["Thiruppalai, Madurai - 625014"],
     image: "/madurai.jpeg",
+  },
+  {
+    country: "Chennai",
+    address: ["Tharamani, Chennai - 600 113"],
+    image: "/chennai1.jpeg",
   },
 ];
 
@@ -104,19 +104,19 @@ export default function GlobalLocations() {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-white text-center mb-10">Global Offices</h3>
-          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-            {globalOffices.map((loc, i) => (
-              <LocationCard key={`global-${i}`} loc={loc} />
+          <h3 className="text-3xl font-bold text-white text-center mb-10">India Offices</h3>
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-4xl mx-auto">
+            {indiaOffices.map((loc, i) => (
+              <LocationCard key={`india-${i}`} loc={loc} />
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-white text-center mb-10">India Offices</h3>
-          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-4xl mx-auto">
-            {indiaOffices.map((loc, i) => (
-              <LocationCard key={`india-${i}`} loc={loc} />
+          <h3 className="text-3xl font-bold text-white text-center mb-10">Global Offices</h3>
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+            {globalOffices.map((loc, i) => (
+              <LocationCard key={`global-${i}`} loc={loc} />
             ))}
           </div>
         </div>
