@@ -47,6 +47,51 @@ const TiltImageVisual = ({ src, alt }) => {
   );
 };
 
+const TiltVideoVisual = ({ src, alt }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const rotateX = useTransform(y, [-100, 100], [15, -15]);
+  const rotateY = useTransform(x, [-100, 100], [-15, 15]);
+
+  const handleMouseMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left - rect.width / 2;
+    const offsetY = event.clientY - rect.top - rect.height / 2;
+    x.set(offsetX);
+    y.set(offsetY);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.div
+      className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 mx-auto mt-2 md:mt-6 flex items-center justify-center cursor-pointer [perspective:1000px]"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <motion.video
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover scale-[1.1] mix-blend-multiply"
+        style={{
+          rotateX,
+          rotateY,
+          WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 80%)',
+          maskImage: 'radial-gradient(circle, black 40%, transparent 80%)'
+        }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      />
+    </motion.div>
+  );
+};
+
 export default function AIFeatures() {
   const scrollContainerRef = useRef(null);
 
@@ -73,12 +118,12 @@ export default function AIFeatures() {
     {
       title: "Enterprise AI",
       description: "Intelligence for business operations, decisions, and workflows.",
-      Visual: () => <TiltImageVisual src="/enterprise-ai.gif" alt="Enterprise AI" />,
+      Visual: () => <TiltVideoVisual src="/enterprise ai.mp4" alt="Enterprise AI" />,
     },
     {
       title: "Industrial AI",
       description: "AI for manufacturing, operations, quality, and industrial systems.",
-      Visual: () => <TiltImageVisual src="/industrial-ai.gif" alt="Industrial AI" />,
+      Visual: () => <TiltVideoVisual src="/industry ai.mp4" alt="Industrial AI" />,
     },
     {
       title: "Customer AI",
