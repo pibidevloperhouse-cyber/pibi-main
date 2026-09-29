@@ -95,7 +95,6 @@ export default function OurProducts() {
                 {/* Button with gradient hover */}
                 <Link href="/contact-us" className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-[#2A84AB] hover:text-white transition-all duration-300 rounded-full bg-white hover:shadow-lg overflow-hidden">
                   
-                  {/* Hover Gradient Background */}
                   <div 
                     className="absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100" 
                     style={{ backgroundImage: 'linear-gradient(135deg, #1f6fb2, #2ec4b6)' }}

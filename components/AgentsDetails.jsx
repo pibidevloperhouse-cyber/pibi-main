@@ -65,8 +65,7 @@ const AgentsDetails = ({ title, id }) => {
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        {/* Subtle gradient to blend into the card background */}
-        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#3c3c3c] to-transparent"></div>
+        {/* Removed gradient overlay as per user request */}
       </div>
 
       {/* Bottom Half: Content */}
