@@ -163,7 +163,7 @@ export default function AIFeatures() {
                 className="group flex flex-col justify-between bg-[#f0f2f5] border-none rounded-[2rem] p-6 md:p-10 overflow-hidden w-full sm:w-[320px] md:w-[380px] h-[400px] sm:h-[450px] md:h-[500px] transition-all duration-500 hover:-translate-y-2"
               >
                 <div className="relative z-10">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4 text-[#2ec4b6] leading-tight pb-1">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#1f6fb2] to-[#2ec4b6] leading-tight pb-1">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 text-sm md:text-lg leading-snug">

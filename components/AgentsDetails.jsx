@@ -71,7 +71,7 @@ const AgentsDetails = ({ title, id }) => {
       {/* Bottom Half: Content */}
       <div className="p-6 md:p-8 flex flex-col flex-grow">
         <h3 
-          className="text-2xl font-bold mb-4 text-[#2ec4b6]"
+          className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]"
         >
           {card.title}
         </h3>
@@ -82,7 +82,7 @@ const AgentsDetails = ({ title, id }) => {
         
         {/* Arrow Icon */}
         <div 
-          className="mt-auto w-10 h-10 rounded-full flex items-center justify-center text-white bg-[#2ec4b6] group-hover:opacity-90 transition-all shadow-md shadow-[#2ec4b6]/20"
+          className="mt-auto w-10 h-10 rounded-full flex items-center justify-center text-white bg-gradient-to-br from-[#1f6fb2] to-[#2ec4b6] group-hover:from-[#38bdf8] group-hover:to-[#2ec4b6] transition-all duration-300 shadow-md shadow-[#2ec4b6]/30"
         >
           <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
         </div>

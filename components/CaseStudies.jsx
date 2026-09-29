@@ -80,7 +80,7 @@ export default function CaseStudies() {
                 <div className="flex-1 p-8 md:p-14 flex flex-col justify-center relative z-10">
                   <h3 className="text-2xl md:text-4xl font-semibold mb-8 leading-tight text-white">
                     {item.titleStart}{" "}
-                    <span className="text-[#2ec4b6]">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]">
                       {item.titleHighlight}
                     </span>
                   </h3>
@@ -99,8 +99,8 @@ export default function CaseStudies() {
                   <hr className="border-white/20 mb-10" />
 
                   <div className="flex items-center gap-4 mb-10">
-                    <span 
-                      className="text-5xl md:text-6xl font-bold tracking-tight text-[#2ec4b6]"
+                    <span
+                      className="text-5xl md:text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]"
                     >
                       {item.metric}
                     </span>
@@ -110,18 +110,9 @@ export default function CaseStudies() {
                   </div>
 
                   <div>
-                    <Link 
+                    <Link
                       href="/contact-us"
-                      className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/40 text-white text-sm transition-all duration-300 hover:border-transparent hover:shadow-lg hover:shadow-[#2ec4b6]/30"
-                      style={{
-                        backgroundColor: 'transparent',
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor = '#2ec4b6';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundColor = 'transparent';
-                      }}
+                      className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/40 text-white text-sm transition-all duration-300 hover:border-transparent hover:bg-gradient-to-r hover:from-[#1f6fb2] hover:to-[#2ec4b6] hover:shadow-lg hover:shadow-[#2ec4b6]/30"
                     >
                       {item.buttonText}
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -131,8 +122,8 @@ export default function CaseStudies() {
 
                 {/* Right Image */}
                 <div className="flex-[1.2] relative min-h-[300px] md:min-h-full">
-                  <div 
-                    className="absolute inset-0 w-full h-full md:[clip-path:polygon(15%_0,100%_0,100%_100%,0_100%)]" 
+                  <div
+                    className="absolute inset-0 w-full h-full md:[clip-path:polygon(15%_0,100%_0,100%_100%,0_100%)]"
                   >
                     <Image
                       src={item.image}

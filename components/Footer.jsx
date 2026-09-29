@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 
-              className="font-bold mb-4 text-lg text-[#2ec4b6]"
+              className="font-bold mb-4 text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]"
             >
               Services
             </h4>
@@ -80,7 +80,7 @@ export default function Footer() {
 
           <div>
             <h4 
-              className="font-bold mb-4 text-lg text-[#2ec4b6]"
+              className="font-bold mb-4 text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]"
             >
               Capabilities
             </h4>
@@ -114,7 +114,7 @@ export default function Footer() {
 
           <div>
             <h4 
-              className="font-bold mb-4 text-lg text-[#2ec4b6]"
+              className="font-bold mb-4 text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#2ec4b6]"
             >
               Solutions
             </h4>
